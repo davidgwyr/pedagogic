@@ -1,0 +1,52 @@
+include: all_linter_rules.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    included_file_warning: ignore
+    missing_required_param: warning
+    missing_return: warning
+    parameter_assignments: warning
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # Unnecessarily inhibiting (e.g. Key in Flutter Widget)
+    always_put_required_named_parameters_first: false
+    # Effective Dart; incompatible with [omit_local_variable_types]
+    always_specify_types: false
+    # Effective Dart; incompatible with [always_specify_types]
+    avoid_annotating_with_dynamic: false
+    # Antiquated
+    avoid_as: false
+    # Unnecessarily inhibiting
+    avoid_returning_null: false
+    # Unnecessarily inhibiting
+    avoid_returning_this: false
+    # Use variables names for readability - of note, incompatible with [always_specify_types]
+    avoid_types_on_closure_parameters: false
+    # Unnecessarily inhibiting
+    lines_longer_than_80_chars: false
+    # Unnecessary
+    prefer_asserts_with_message: false
+    # Dart convention is single; incompatible with: prefer_single_quotes
+    prefer_double_quotes: false
+    # Does not predict better readability
+    prefer_expression_function_bodies: false
+    # Interferes with readability
+    prefer_int_literals: false
+    # Conflicts with [avoid_relative_lib_imports]
+    prefer_relative_imports: false
+    # In an ideal world
+    public_member_api_docs: false
+    # Unnecessarily inhibiting
+    sort_constructors_first: false
+    # Interferes with code soundness and readability; incompatible with [prefer_final_locals]
+    unnecessary_final: false

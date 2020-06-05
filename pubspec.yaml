@@ -1,0 +1,13 @@
+name: pedagogic
+version: 0.1.1
+description: >-
+  Strict and opinionated Dart analysis options following the approach to start with all lint rules
+  and then apply select exclusions.
+author: David Gwyr
+homepage: https://github.com/davidgwyr/pedagogic
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dev_dependencies:
+  linter: ^0.1.116
