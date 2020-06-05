@@ -16,9 +16,11 @@ Use as the **include** in your `analysis_options.yaml` in the root of your proje
 include: package:pedagogic/analysis_options.yaml
 ```
 
-If you don't have an `analysis_options.yaml` yet, just create one and check out [Dart Analysis Options: Customizing static analysis](https://dart.dev/guides/language/analysis-options).
+If you don't have an `analysis_options.yaml` yet, just create one and check out...
 
 ## Reading
+
+[Dart Analysis Options: Customizing static analysis](https://dart.dev/guides/language/analysis-options)
 
 [Dart Lint Rules](https://dart-lang.github.io/linter/lints/)
 
